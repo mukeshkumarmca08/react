@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css"/>
+    <title>React</title>
+</head>
+<body>
+    <!-- ===========Use Html========== -->
+    <div id="roothtml">
+        <h1>Print Hello World by HTML Tag</h1>
+    </div>
+<!-- ===========Use Java Script========== -->
+    <div id="rootjs">        
+    </div>
+    <script>
+      const header= document.createElement("h1");
+      header.innerHTML="Print Hello World by java script";
+     const rootjs= document.getElementById("rootjs");
+     rootjs.appendChild(header);
+    </script>
+    <!-- ===========Use react========== -->
+    <div id="root"></div>
+    <div id="root1">
+        <h1>Default value of h1</h1>
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="./App.js">
+//    const reacthHeader= React.createElement("h1",{},"Print Hello world by React");
+//    const reactroot =ReactDOM.createRoot(document.getElementById("root"));
+//    reactroot.render(reacthHeader);
+</script>
+
+</body>
+</html>
