@@ -10,6 +10,7 @@ const reacthHeader= React.createElement(
   reactroot.render(reacthHeader); // render method convert the createelement into html tag and bind into root.
 
    /****below code is for more then one element
+    * gi
     * <div id="parent">
     * <div id="child">
     * <h1 id="header"></h1>
